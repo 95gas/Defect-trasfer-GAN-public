@@ -5,7 +5,7 @@ This repository contains my thesis work. It aims at developing a GAN based model
 Our solution is based on the swapping autoencoder model which is in turns based on the disentangled learning. Indeed, we decompose the input image into two encodings, one representing the defect and one representing the backgrournd. In this way we could transfer the defect from one material to a different one. The material is indentified by having different texture, thus different background.
 Moreover, we employed a versatile classifier and a multi-task discriminator on top of the swapping autoencoder.
 
-![](https://github.com/95gas/Defect-transfer-GAN/blob/main/GAN/img/Architecture.png)
+![](https://github.com/95gas/Defect-transfer-GAN/blob/main/Architecture.png)
 
 ## RESULTs
 From our results, we could see that our model can in some cases transfer the defect with high-fidelity to the corresponding reference input image and regenerate the texture input image very well. However, in other cases, our model fails and either it generates only a shadow of the defect or apply only the style of the background reference image forgetting the texture details.
